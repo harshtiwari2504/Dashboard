@@ -39,7 +39,7 @@ const Content = () => {
 
 
   <div className='flex'>
-    <div className='w-1/5 h-screen bg-gray-100 text-gray-600 text-2xl font-semibold'>
+    <div className='w-1/5 h-screen bg-gray-100 text-gray-600 text-lg font-semibold'>
         <ul className='space-y-7 py-7'>
             <li className='flex'><GridViewIcon className='mx-7'/><span className='hidden sm:block'>Dashboard</span></li>
             <li className='flex'><CalendarTodayIcon className='mx-7'/><span className='hidden sm:block'> Calander</span></li>
@@ -60,8 +60,8 @@ const Content = () => {
         <div className='text-center bg-gray-100 m-4 flex justify-between'> 
             <img src="p3.png" className="bg-[#DFF8E5] pr-16 hidden sm:inline" alt="" />
             <div className='py-5'>
-            <h1 className='text-sm sm:text-5xl font-semibold   font-mono'>Welcome to Tukwil Municipal Court</h1>
-            <h3 className='text-xs sm:text-4xl text-left'>Good Morning</h3>
+            <h1 className='text-sm sm:text-3xl font-semibold   font-mono'>Welcome to Tukwil Municipal Court</h1>
+            <h3 className='text-xs sm:text-2xl text-left'>Good Morning</h3>
             </div>
             <img src="p4.png" alt="" className="bg-[#DFF8E5] pr-16 hidden sm:inline"/>
         </div>
@@ -74,8 +74,8 @@ const Content = () => {
             <h3 className='flex justify-between'>
                 <span className=' flex'>
                 <img src="p5.png" alt="" className='p-1 w-10 sm:w-20 object-contain rounded-full'  />
-                <span className='text-pink-600 text-3xl sm:text-6xl font-semibold'>23</span>
-                <span className='text-lg sm:text-2xl font-semibold mt-5 pl-2'>
+                <span className='text-pink-600 text-lg sm:text-3xl sm:mt-5 font-semibold mt-2'>23</span>
+                <span className='text-lg sm:text-2xl font-semibold sm:mt-6 mt-2 pl-2'>
                     Checkins
                 </span>
                 </span>
@@ -95,8 +95,7 @@ const Content = () => {
                 {item.time}
                 </div> 
                 <div>
-                <div className='font-bold  text-md sm:text-2xl'>
-                    
+                <div className='font-bold  text-md sm:text-lg mt-5'>
                 {item.name}
                 </div>
                 <div className='font-semibold text-xs sm:text-md text-gray-500'>
@@ -108,9 +107,7 @@ const Content = () => {
                 <h1 className='text-pink-400 font-bold text-xs sm:text-md'>
                 {item.checkin}
                 </h1>
-                </div>
-                
-                
+                </div>  
             </div>
             </>
             )}
@@ -118,19 +115,19 @@ const Content = () => {
         
         </div>
         <div className='sm:w-3/5'>
-            <ul className='flex justify-between m-4 text-sm sm:text-xl text-white text-center'>
-                <li className='bg-violet-700 w-full py-2 mx-0.5 rounded-lg '>Today</li>
-                <li className='bg-violet-500 w-full py-2 mx-0.5 rounded-lg'>Current Week</li>
-                <li className='bg-violet-500 w-full py-2 mx-0.5 rounded-lg'>Current Month</li>
-                <li className='bg-violet-500 w-full py-2 mx-0.5 rounded-lg'>Current Year</li>
-                <li className='bg-violet-500 w-full py-2 mx-0.5 rounded-lg'>Custom</li>
+            <ul className='flex justify-between m-4 text-sm sm:text-md text-white text-center'>
+                <li className='bg-violet-700 w-full p-1 rounded-md sm:py-2 mx-0.5 sm:rounded-full '>Today</li>
+                <li className='bg-violet-500 w-full p-1 rounded-md sm:py-2 mx-0.5 sm:rounded-full'>Current Week</li>
+                <li className='bg-violet-500 w-full p-1 rounded-md sm:py-2 mx-0.5 sm:rounded-full'>Current Month</li>
+                <li className='bg-violet-500 w-full p-1 rounded-md sm:py-2 mx-0.5 sm:rounded-full'>Current Year</li>
+                <li className='bg-violet-500 w-full p-1 rounded-md sm:py-2 mx-0.5 sm:rounded-full'>Custom</li>
             </ul>
 
             <div className='bg-gray-100 mx-5 rounded-2xl p-3 '>
             <h1 className='font-bold sm:text-3xl pb-4'>Action Required</h1>
             <div className='border-b-2 border-solid border-gray-300 mt-1'></div>
 
-            <ul className='list-disc py-2 sm:py-5 px-7  text-xs sm:text-2xl font-semibold space-y-3 sm:space-y-11 '>
+            <ul className='list-disc py-2 sm:py-5 px-7  text-xs sm:text-lg font-semibold space-y-3 sm:space-y-11 '>
                 <li className='marker:text-violet-700'>5 Jobs are in <span className='text-violet-300'>"Open Status"</span></li>
                 <li className='marker:text-red-700'>2 Jobs must be filled in next <span className='text-orange-300'>"24 Hours"</span></li>
                 <li className='marker:text-green-700'>4 Jobs are not  filled sinced last <span className='text-yellow-300'>72 Hours</span></li>
